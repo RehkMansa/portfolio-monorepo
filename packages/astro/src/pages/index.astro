@@ -1,25 +1,32 @@
 ---
-import Gradient from '../layouts/Gradient.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="John Doe | Frontend developer">
-	<main class="">
-		<Gradient>
-			<p>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
-				eveniet eius voluptatibus quia, aperiam aspernatur voluptatum
-				odit quam architecto ex illum in sequi et. Quaerat harum, ex
-				voluptates illum quasi repellat cum quas nulla libero error
-				dolorem fugit est ullam ipsam exercitationem praesentium
-				deleniti distinctio quos architecto, dolores excepturi? Sint
-				iste praesentium corporis? Veritatis fugiat explicabo deleniti
-				neque, quisquam consequatur, odio similique excepturi qui vero
-				nam, dignissimos ea eligendi sit velit voluptate quis. Impedit,
-				expedita et rerum totam facilis incidunt odio quia deleniti quae
-				a alias sed quaerat optio animi nesciunt eligendi ullam odit
-				dolor, itaque exercitationem molestiae? Deleniti, accusamus?
-			</p>
-		</Gradient>
+<Layout title="Chidimma Ozomma | Frontend developer">
+	<main>
+		<section
+			class="gradient sm:min-h-[35em] min-h-screen flex items-center justify-center"
+		>
+			<div class="space-y-7 sm:max-w-lg sm:px-0 max-w-[80%]">
+				<p class="text-sm">Hello my name is</p>
+				<div class="flex sm:flex-row flex-col sm:items-center gap-5">
+					<img
+						src="https://dimmazurri.netlify.app/assets/dimma.jpg"
+						alt="Chidimma Ozomma Linda"
+						class="sm:h-40 h-[300px] sm:w-40 rounded-xl aspect-square object-cover"
+					/>
+					<h1
+						class="sm:stext-5xl text-4xl max-[361px]:text-3xl font-bold lh-12"
+					>
+						Chidimma <br class="hidden sm:block" />Ozomma
+					</h1>
+				</div>
+				<p class="text-[15px] leading-6">
+					I'm a frontend developer with a good knowledge of html and
+					css, I'm currently on track to become a fullstack developer
+					with the zuri internship
+				</p>
+			</div>
+		</section>
 	</main>
 </Layout>

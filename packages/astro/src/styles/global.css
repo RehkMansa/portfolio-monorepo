@@ -69,3 +69,11 @@ html {
 .shadow-4 {
 	box-shadow: 0 0 4px #0e0d0d;
 }
+
+.gradient {
+	background-image: repeating-linear-gradient(45deg, #000, #0c0c0c 60%);
+}
+
+.lh-12 {
+	line-height: 1.2;
+}

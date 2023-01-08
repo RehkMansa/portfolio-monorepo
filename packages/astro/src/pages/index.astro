@@ -1,46 +1,12 @@
 ---
-import PortfolioCard from '../components/Elements/PortfolioCard.astro';
 import Hero from '../components/Sections/Hero.astro';
+import MyProjects from '../components/Sections/MyProjects.astro';
 import Layout from '../layouts/Layout.astro';
-
-const projects = [
-	{
-		language: 'HTML + CSS',
-		title: 'Landing Page',
-		desc: 'A product landing page developed using HTML5 and CSS, this demo features a product named techhub.',
-	},
-	{
-		language: 'HTML + CSS',
-		title: 'Survey Form',
-		desc: 'This project was built using HTML5 without CSS, the goal was to master the form element.',
-	},
-	{
-		language: 'HTML + CSS',
-		title: 'Facebook Login',
-		desc: 'This project was built to clone Facebook login page. It was created using HTML5 and CSS.',
-	},
-	{
-		language: 'HTML + CSS',
-		title: 'Piggyvest Login',
-		desc: 'This project features the Piggybank company card. Built to master the use of CSS pseudo element.',
-	},
-];
 ---
 
 <Layout title="Chidimma Ozomma | Frontend developer">
 	<main>
 		<Hero />
-		<section
-			class="container px-[5%] mx-auto min-h-[30em] flex items-center justify-center sm:py-14 py-20"
-		>
-			<div class="space-y-5">
-				<h2 class="section-heading">My Projects</h2>
-				<ul
-					class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 list-card pt-4"
-				>
-					{projects.map((project) => <PortfolioCard {...project} />)}
-				</ul>
-			</div>
-		</section>
+		<MyProjects />
 	</main>
 </Layout>

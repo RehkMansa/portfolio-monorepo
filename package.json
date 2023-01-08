@@ -4,6 +4,7 @@
 		"packages/astro"
 	],
 	"scripts": {
-		"start": "yarn workspace @rebuild/astro start"
+		"start:astro": "yarn workspace @rebuild/astro start",
+		"astro": "yarn workspace @rebuild/astro astro"
 	}
 }

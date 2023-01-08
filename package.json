@@ -2,5 +2,8 @@
 	"private": true,
 	"workspaces": [
 		"packages/*"
-	]
+	],
+	"scripts": {
+		"start": "yarn workspace astro start"
+	}
 }

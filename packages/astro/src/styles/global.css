@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -12,7 +16,7 @@
 }
 html,
 body {
-	height: 100%;
+	height: fit-content;
 }
 body {
 	line-height: 1.5;
@@ -76,4 +80,25 @@ html {
 
 .lh-12 {
 	line-height: 1.2;
+}
+
+.list-card:hover > * {
+	opacity: 0.4;
+}
+
+.list-card > *:hover {
+	opacity: 1;
+	box-shadow: 0 25px 50px 10px rgba(0 0 0, 0.015);
+}
+
+@media (max-width: 670px) {
+	.list-card:hover > * {
+		opacity: 1;
+	}
+}
+
+@layer components {
+	.section-heading {
+		@apply text-3xl sm:text-4xl font-bold mb-8 text-center;
+	}
 }

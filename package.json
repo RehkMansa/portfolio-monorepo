@@ -1,9 +1,9 @@
 {
 	"private": true,
 	"workspaces": [
-		"packages/*"
+		"packages/astro"
 	],
 	"scripts": {
-		"start": "yarn workspace astro start"
+		"start": "yarn workspace @rebuild/astro start"
 	}
 }

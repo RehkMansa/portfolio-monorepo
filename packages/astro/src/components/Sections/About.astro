@@ -15,10 +15,10 @@ const aboutMeta = [
 ];
 ---
 
-<section class="gradient" id="about">
-	<div>
-		<h2 class="section-heading"></h2>
-		<div>
+<section class="gradient py-20 flex items-center justify-center" id="about">
+	<div class="mx-auto gradient__wrapper">
+		<h2 class="section-heading">About Me</h2>
+		<div class="space-y-5 text-[0.95rem]">
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				Quisquam quos nesciunt nisi soluta, consequuntur, vero porro
@@ -26,6 +26,25 @@ const aboutMeta = [
 				consectetur adipisicing elit. Numquam sit accusantium eaque est
 				facilis ipsa.
 			</p>
+			<ul class="gap-4 grid sm:grid-cols-2">
+				{
+					aboutMeta.map(({ name, options }) => (
+						// remove modifier class if options are even :last-of-type
+						<li class="space-y-2 sm:last-of-type:col-span-2">
+							<p class="first-letter:capitalize font-semibold">
+								{name}
+							</p>
+							<ul class="flex gap-3 items-center flex-wrap">
+								{options.map((opt) => (
+									<li class="px-4 py-1 bg-[#1b1b1d] rounded-2xl first-letter:capitalize lowercase">
+										{opt}
+									</li>
+								))}
+							</ul>
+						</li>
+					))
+				}
+			</ul>
 		</div>
 	</div>
 </section>

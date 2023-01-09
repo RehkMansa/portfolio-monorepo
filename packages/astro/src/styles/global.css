@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-padding-top: 80px;
+}
+
 .shadow-4 {
 	box-shadow: 0 0 4px #0e0d0d;
 }
@@ -33,5 +37,9 @@
 @layer components {
 	.section-heading {
 		@apply text-3xl sm:text-4xl font-bold mb-8 text-center;
+	}
+
+	.gradient__wrapper {
+		@apply sm:max-w-lg sm:px-0 max-w-[80%] mx-auto;
 	}
 }

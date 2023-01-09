@@ -1,0 +1,32 @@
+---
+import { Icon } from 'astro-icon';
+
+const socials = [
+	{
+		name: 'github',
+	},
+	{
+		name: 'gmail',
+	},
+	{
+		name: 'twitter',
+	},
+];
+---
+
+<section class="py-20 flex items-center justify-center" id="contact">
+	<div>
+		<h2 class="section-heading">Reach out to me</h2>
+		<div class="flex gap-6 items-center">
+			{
+				socials.map(({ name }) => (
+					// make sure icon pack is available for material design icon
+					<p class="flex items-center gap-3 leading-none capitalize">
+						<Icon size="20px" pack="mdi" name={name} />
+						{name}
+					</p>
+				))
+			}
+		</div>
+	</div>
+</section>

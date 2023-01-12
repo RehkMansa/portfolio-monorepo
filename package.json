@@ -5,6 +5,7 @@
 	],
 	"scripts": {
 		"start:astro": "yarn workspace @rebuild/astro start",
-		"astro": "yarn workspace @rebuild/astro astro"
+		"astro": "yarn workspace @rebuild/astro astro",
+		"start:svelte": "yarn workspace @rebuild/svelte vite"
 	}
 }
